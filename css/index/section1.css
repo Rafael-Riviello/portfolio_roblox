@@ -1,0 +1,29 @@
+#section1_pp {
+    width: 300px;
+    border-radius: 50%;
+    border: 1px solid var(--green-color);
+}
+
+#section1_desc1 {
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+#section1_desc2 {
+    margin-top: 1em;
+}
+
+@media screen and (min-width: 1024px) {
+    #section1 .container {
+        flex-direction: row;
+    }
+
+    #section1_pp {
+        width: 350px;
+        order: 1
+    }
+
+    #section1_texts {
+        text-align: left;
+    }
+}

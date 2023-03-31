@@ -1,0 +1,53 @@
+#section4 {
+    padding: 50px 0;
+    background-color: var(--gray-color);
+    border-top: 1px solid var(--green-color);
+    border-bottom: 1px solid var(--green-color);
+}
+
+#section4_payment-desc {
+    margin-top: 1em;
+}
+
+#section4_payment-methods {
+    width: 75vw;
+    margin-top: 1rem;
+    padding: 25px;
+    border-radius: 25px;
+    border: 1px solid var(--green-color);
+    background-color: black;
+}
+
+.section4_payment-methods-divider {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0 auto;
+}
+
+.section4_payment-method {
+    display: flex;
+    align-items: center;
+}
+
+.section4_payment-method img {
+    width: 25px;
+    margin-right: 10px;
+}
+
+.section4_payment-method-texts {
+    text-align: left;
+}
+
+.section4_payment-method-texts p {
+    font-size: .75rem;
+    color: rgb(200,200,200);
+    font-style: italic;
+}
+
+@media screen and (min-width: 1024px) {
+    #section4_payment-methods {
+        width: 500px;
+    }
+}

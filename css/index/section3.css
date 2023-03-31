@@ -1,0 +1,18 @@
+.section3_project {
+    margin-top: 1rem;
+}
+
+.section3_project_title {
+    text-decoration: underline;
+}
+
+.section3_project_video {
+    width: 100vw;
+    margin: 1rem 0;
+}
+
+@media screen and (min-width: 1024px) {
+    .section3_project_video {
+        width: 750px;
+    }
+}

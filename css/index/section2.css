@@ -1,0 +1,21 @@
+#section2 {
+    padding: 50px 0;
+    background-color: var(--gray-color);
+    border-top: 1px solid var(--green-color);
+    border-bottom: 1px solid var(--green-color);
+}
+
+#section2_aboutme {
+    margin-top: 1em;
+    text-align: left;
+}
+
+@media screen and (min-width: 1024px) {
+    #section2 .container {
+        align-items: flex-start;
+    }
+
+    #section2_aboutme {
+        width: 850px;
+    }
+}
