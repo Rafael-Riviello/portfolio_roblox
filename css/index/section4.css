@@ -46,6 +46,66 @@
     font-style: italic;
 }
 
+#section4_tax-calculator {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#section4_tax-calculator h5 {
+    font-weight: bold;
+}
+
+#tax-calculator_input {
+    height: 25px;
+    margin-top: 1rem;
+    background-color: var(--gray2-color);
+    border: none;
+    text-align: center;
+    color: #FFF;
+    font-size: 1em;
+}
+
+#tax-calculator_output {
+    height: 25px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--green-color);
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+#tax-calculator_calculate {
+    height: 25px;
+    margin-top: 1rem;
+    border: none;
+    background-color: var(--green-color);
+    color: black;
+    font-weight: bold;
+    font-family: "Montserrat";
+}
+
+@media screen and (min-width: 500px) {
+    #section4_tax-calculator {
+        width: 250px;
+    }
+
+    #tax-calculator_input {
+        border-radius: 10px 10px 0 0;
+    }
+
+    #tax-calculator_output {
+        border-radius: 0 0 10px 10px;
+    }
+
+    #tax-calculator_calculate{
+        border-radius: 10px;
+    }
+}
+
 @media screen and (min-width: 1024px) {
     #section4_payment-methods {
         width: 500px;

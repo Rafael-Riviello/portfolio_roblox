@@ -1,5 +1,8 @@
 .section3_project {
     margin-top: 1rem;
+    border-radius: 10px;
+    background-color: var(--gray2-color);
+    padding: 10px 0;
 }
 
 .section3_project_title {
@@ -9,6 +12,10 @@
 .section3_project_video {
     width: 100vw;
     margin: 1rem 0;
+}
+
+strong {
+    color: #ffc800;
 }
 
 @media screen and (min-width: 1024px) {
