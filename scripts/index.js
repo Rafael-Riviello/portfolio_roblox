@@ -4,11 +4,16 @@ const tax_output = document.getElementById("tax-calculator_output");
 
 function calculateTax(event){
     event.preventDefault();
+    
+    const creator_earnings = 0.7;
+    const input =  parseInt(tax_input.value) || 0;
+    let tax = Math.floor((input-(input*creator_earnings))/creator_earnings);
+    
+    if((input+tax)*creator_earnings < input){
+        tax++
+    };
 
-    const input = tax_input.value || 0
-    const output = input * 1.43
-
-    tax_output.innerHTML = `R\$${input} + 43% = R\$${output}`
+    tax_output.innerHTML = `R$${input+tax}`;
 }
 
 tax_button.addEventListener("click", calculateTax);
